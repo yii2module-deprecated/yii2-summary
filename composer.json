@@ -1,0 +1,26 @@
+{
+	"name": "yii2woop/yii2-summary",
+	"type": "yii2-extension",
+	"keywords": [
+		"yii2",
+		"summary"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Yamshikov Vitaliy, WOOPPAY LLC",
+			"email": "theyamshikov@yandex.ru"
+		}
+	],
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"yii2woop\\summary\\": "src",
+			"yii2woop\\summary\\tests\\": "tests"
+		}
+	},
+	"require": {
+		"yiisoft/yii2": "*",
+		"php": ">=5.4.0"
+	}
+}

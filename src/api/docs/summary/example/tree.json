@@ -1,0 +1,21 @@
+{
+	"id": {
+		"addressless_transfer": "306",
+		"category_root": "58",
+		"cnp_withdrawal": "320",
+		"iban_payment": "818"
+	},
+	"url": {
+		"avatars": "http:\/\/static.test.wooppay.com\/avatar",
+		"bank_pictures": "http:\/\/static.test.wooppay.com\/bank",
+		"service_menu_pictures": "http:\/\/static.test.wooppay.com\/service_menu",
+		"service_pictures": "http:\/\/static.test.wooppay.com\/service"
+	},
+	"last_modified": {
+		"city": "2018-07-06T12:55:56Z",
+		"country": "2018-07-06T12:55:56Z",
+		"region": "2018-07-06T12:55:56Z",
+		"service": "2018-05-02T17:10:24Z",
+		"service_category": "2018-02-27T11:51:21Z"
+	}
+}
