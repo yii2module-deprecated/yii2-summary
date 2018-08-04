@@ -3,6 +3,7 @@
 namespace yii2module\summary\domain;
 
 // todo: перенести в yii2module
+use yii2lab\domain\enums\Driver;
 
 /**
  * Class Domain
@@ -22,9 +23,11 @@ class Domain extends \yii2lab\domain\Domain {
 		return [
 			'repositories' => [
 				'summary',
+                'static' => Driver::FILEDB,
 			],
 			'services' => [
 				'summary',
+                'static',
 				'url',
 			],
 		];
