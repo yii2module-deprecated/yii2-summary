@@ -9,6 +9,6 @@ namespace yii2module\summary\api;
  */
 class Module extends \yii\base\Module {
 
-	//public static $langDir = 'yii2woop/summary/domain/messages';
+	//public static $langDir = 'yii2module/summary/domain/messages';
 
 }

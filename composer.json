@@ -1,5 +1,5 @@
 {
-	"name": "yii2woop/yii2-summary",
+	"name": "yii2module/yii2-summary",
 	"type": "yii2-extension",
 	"keywords": [
 		"yii2",
@@ -15,8 +15,8 @@
 	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
-			"yii2woop\\summary\\": "src",
-			"yii2woop\\summary\\tests\\": "tests"
+			"yii2module\\summary\\": "src",
+			"yii2module\\summary\\tests\\": "tests"
 		}
 	},
 	"require": {

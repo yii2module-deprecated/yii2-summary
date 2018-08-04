@@ -4,7 +4,7 @@
 Устанавливаем зависимость:
 
 ```
-composer require yii2woop/yii2-summary
+composer require yii2module/yii2-summary
 ```
 
 Создаем полномочие:
@@ -19,7 +19,7 @@ oExamlpe
 return [
 	'modules' => [
 		// ...
-		'summary' => 'yii2woop\summary\frontend\Module',
+		'summary' => 'yii2module\summary\frontend\Module',
 		// ...
 	],
 ];
@@ -31,7 +31,7 @@ return [
 return [
 	'modules' => [
 		// ...
-		'summary' => 'yii2woop\summary\backend\Module',
+		'summary' => 'yii2module\summary\backend\Module',
 		// ...
 	],
 ];
@@ -43,7 +43,7 @@ return [
 return [
 	'modules' => [
 		// ...
-		'summary' => 'yii2woop\summary\api\Module',
+		'summary' => 'yii2module\summary\api\Module',
 		// ...
 		'components' => [
             'urlManager' => [
@@ -64,7 +64,7 @@ return [
 return [
 	'modules' => [
 		// ...
-		'summary' => 'yii2woop\summary\console\Module',
+		'summary' => 'yii2module\summary\console\Module',
 		// ...
 	],
 ];
@@ -76,7 +76,7 @@ return [
 return [
 	'components' => [
 		// ...
-		'summary' => 'yii2woop\summary\domain\Domain',
+		'summary' => 'yii2module\summary\domain\Domain',
 		// ...
 	],
 ];
