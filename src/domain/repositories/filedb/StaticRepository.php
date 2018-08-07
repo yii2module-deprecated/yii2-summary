@@ -9,6 +9,8 @@ use yii2module\summary\domain\entities\SummaryEntity;
 
 class StaticRepository extends BaseActiveFiledbRepository {
 	
+	protected $primaryKey = 'name';
+	
 	public function tableName() {
 		return 'summary_static';
 	}
