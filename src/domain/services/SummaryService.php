@@ -24,6 +24,8 @@ use yii2module\summary\domain\repositories\ar\SummaryRepository;
  */
 class SummaryService extends BaseService implements SummaryInterface {
 	
+	public $lastModifiedTables = [];
+	
 	private $cache;
 	
 	public function map() {
