@@ -2,7 +2,7 @@
 
 namespace yii2module\summary\domain\enums;
 
-use yii2lab\misc\enums\BaseEnum;
+use yii2lab\extension\enum\base\BaseEnum;
 
 class TypeEnum extends BaseEnum {
 	
