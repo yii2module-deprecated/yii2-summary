@@ -2,14 +2,13 @@
 
 namespace yii2module\summary\domain\helpers;
 
-use Dii;
 use Yii;
 use yii2lab\helpers\Helper;
 
 class ModifiedHelper {
 	
 	public static function getList() {
-		$lastModifiedTables = Dii::$domain->summary->summary->lastModifiedTables;
+		$lastModifiedTables = \App::$domain->summary->summary->lastModifiedTables;
 		$result = [];
 		$q = new yii\db\Query;
 		foreach($lastModifiedTables as $key => $config) {

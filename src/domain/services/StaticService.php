@@ -12,7 +12,7 @@ class StaticService extends BaseActiveService {
 		if(empty($logo) || empty($name)) {
 			return null;
 		}
-		$summaryEntity = Yii::$domain->summary->static->oneById($name);
+		$summaryEntity = \App::$domain->summary->static->oneById($name);
 		$baseUrl = EnvService::getStaticUrl($summaryEntity->value);
 		return $baseUrl . SL . $logo;
 	}
