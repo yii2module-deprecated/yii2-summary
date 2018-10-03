@@ -10,12 +10,12 @@ use yii2module\summary\domain\services\StaticService;
  * Class Domain
  * 
  * @package yii2module\summary\domain
- * @property \yii2module\summary\domain\interfaces\services\SummaryInterface $summary
- * @property \yii2module\summary\domain\interfaces\services\UrlInterface $url
  * @property-read \yii2module\summary\domain\interfaces\services\BaseInterface $base
  * @property-read \yii2module\summary\domain\interfaces\services\IdInterface $id
  * @property-read StaticService $static
- *
+ * @property-read \yii2module\summary\domain\interfaces\services\SummaryInterface $summary
+ * @property-read \yii2module\summary\domain\interfaces\services\UrlInterface $url
+ * @property-read \yii2module\summary\domain\interfaces\repositories\RepositoriesInterface $repositories
  */
 class Domain extends \yii2lab\domain\Domain {
 	
