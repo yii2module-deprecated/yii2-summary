@@ -3,7 +3,7 @@
 namespace yii2module\summary\domain\helpers;
 
 use Yii;
-use yii2lab\helpers\Helper;
+use yii2lab\extension\common\helpers\Helper;
 
 class ModifiedHelper {
 	
