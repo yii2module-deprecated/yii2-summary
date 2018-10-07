@@ -17,7 +17,7 @@ class Resource extends ActiveRecord {
 	public function behaviors() {
 		return [
 			'timestamp' => [
-				'class' => TimestampBehavior::className(),
+				'class' => TimestampBehavior::class,
 				'attributes' => [
 					ActiveRecord::EVENT_BEFORE_INSERT => 'date_change',
 					ActiveRecord::EVENT_BEFORE_UPDATE => 'date_change',
