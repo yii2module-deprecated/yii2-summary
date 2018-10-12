@@ -2,7 +2,6 @@
 
 namespace yii2module\summary\domain;
 
-// todo: перенести в yii2module
 use yii2lab\domain\enums\Driver;
 use yii2module\summary\domain\services\StaticService;
 
@@ -15,7 +14,6 @@ use yii2module\summary\domain\services\StaticService;
  * @property-read StaticService $static
  * @property-read \yii2module\summary\domain\interfaces\services\SummaryInterface $summary
  * @property-read \yii2module\summary\domain\interfaces\services\UrlInterface $url
- * @property-read \yii2module\summary\domain\interfaces\repositories\RepositoriesInterface $repositories
  */
 class Domain extends \yii2lab\domain\Domain {
 	
