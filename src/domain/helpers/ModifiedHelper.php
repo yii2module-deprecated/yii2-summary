@@ -10,13 +10,13 @@ class ModifiedHelper {
 	public static function getList() {
 		$lastModifiedTables = \App::$domain->summary->summary->lastModifiedTables;
 		$result = [];
-		$q = new yii\db\Query;
 		foreach($lastModifiedTables as $key => $config) {
 			if(!empty($config['value'])) {
 				$result[$key] = call_user_func($config['value']);
 			} else {
 				$fieldName = $config['field'];
 				$tableName = $config['table'];
+				$q = new yii\db\Query;
 				$row = $q
 					->select([$fieldName])
 					->from($tableName)
