@@ -71,8 +71,8 @@ class SummaryService extends BaseService implements SummaryInterface
 	{
 		/** @var InfoEntity $partner */
 		$partner = App::$domain->partner->info->oneFromHeader();
-		$summary['category_group'] = $partner->summary->getCategoryGroupId();
-		$summary['category_root'] = $partner->summary->getCategoryRoot();
+		$summary['category_group'] = (string) $partner->summary->getCategoryGroupId();
+		$summary['category_root'] = (string)  $partner->summary->getCategoryRoot();
 		foreach ($summary as $key => $item) {
 			$collection[$key] = $summary[$key];
 		}
