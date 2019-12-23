@@ -6,6 +6,7 @@ use Yii;
 use yii\helpers\ArrayHelper;
 use yii2lab\app\domain\helpers\EnvService;
 use yii2lab\domain\services\BaseService;
+use yii2lab\domain\services\base\BaseActiveService;
 use yii2module\summary\domain\enums\TypeEnum;
 use yii2module\summary\domain\helpers\ModifiedHelper;
 use yii2module\summary\domain\helpers\ResourceHelper;
@@ -19,7 +20,7 @@ use yii2module\summary\domain\repositories\ar\SummaryRepository;
  *
  * @property SummaryRepository $repository
  */
-class SummaryService extends BaseService implements SummaryInterface
+class SummaryService extends BaseActiveService implements SummaryInterface
 {
 
 	public $lastModifiedTables = [];
