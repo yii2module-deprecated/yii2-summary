@@ -38,7 +38,7 @@ $columns = [
 
 <?= GridView::widget([
 	'dataProvider' => $dataProvider,
-	'layout' => '{summary}{items}',
+	'layout' => '{summary}{items}{pager}',
 	'columns' => $columns,
 ]); ?>
 

@@ -2,6 +2,7 @@
 
 namespace yii2module\summary\domain\services;
 
+use App;
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii2lab\app\domain\helpers\EnvService;
@@ -12,6 +13,7 @@ use yii2module\summary\domain\helpers\ModifiedHelper;
 use yii2module\summary\domain\helpers\ResourceHelper;
 use yii2module\summary\domain\interfaces\services\SummaryInterface;
 use yii2module\summary\domain\repositories\ar\SummaryRepository;
+use yii2woop\partner\domain\entities\InfoEntity;
 
 /**
  * Class SummaryService
@@ -68,10 +70,10 @@ class SummaryService extends BaseActiveService implements SummaryInterface
 
 	private function addLocalParam($collection)
 	{
-		if (empty(Yii::$app->params['summary'])) {
-			return $collection;
-		}
-		$summary = Yii::$app->params['summary'];
+		/** @var InfoEntity $partner */
+		$partner = App::$domain->partner->info->oneFromHeader();
+		$summary['category_group'] = (string) $partner->summary->getCategoryGroupId();
+		$summary['category_root'] = (string)  $partner->summary->getCategoryRoot();
 		foreach ($summary as $key => $item) {
 			$collection[$key] = $summary[$key];
 		}
