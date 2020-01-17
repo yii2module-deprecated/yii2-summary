@@ -22,11 +22,13 @@ class Domain extends \yii2lab\domain\Domain {
 			'repositories' => [
 				'summary',
                 'static' => Driver::FILEDB,
+				'version'
 			],
 			'services' => [
 				'summary',
                 'static',
 				'url',
+				'version'
 			],
 		];
 	}

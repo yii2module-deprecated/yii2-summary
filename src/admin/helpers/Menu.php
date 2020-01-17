@@ -9,12 +9,16 @@ class Menu implements MenuInterface {
 
 	public function toArray() {
 		return [
-			'label' => ['summary/main', 'title'],
+			'label' => ['summary/main', 'app data'],
 			'module' => 'summary',
 			'items' => [
 				[
 					'label' => ['summary/main', 'title'],
 					'url' => 'summary',
+				],
+				[
+					'label' => ['summary/app_info', 'title'],
+					'url' => 'summary/version',
 				],
 			],
 		];
