@@ -12,6 +12,9 @@ class SummaryForm extends Model {
 	public $value;
 	public $date_change;
 
+	const SCENARIO_CREATE = 'create';
+
+
 	public function attributeLabels()
 	{
 		return [
@@ -25,6 +28,13 @@ class SummaryForm extends Model {
 	{
 		return [
 			[['name', 'type', 'value'], 'required'],
+			['name', 'isSummaryExists', 'on' => self::SCENARIO_CREATE]
 		];
+	}
+
+	public function isSummaryExists($attr)
+	{
+		$entity = \App::$domain->summary->summary->oneByName($this->$attr);
+		return $entity ? $this->addError('name', Yii::t('summary/main', 'Record with this name already exists')) : true;
 	}
 }
